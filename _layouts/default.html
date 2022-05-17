@@ -23,11 +23,14 @@
 
           <div class="site-info">
             <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
+            <p class="site-description">
+              <span>I'm </span><span id="text"></span><span>|</span>
+            </p>
           </div>
 
           <nav>
             <a href="{{ site.baseurl }}/">Blog</a>
+            <a href="{{ site.baseurl }}/portfolio">Portfolio</a>
             <a href="{{ site.baseurl }}/about">About</a>
           </nav>
         </header>
@@ -48,4 +51,5 @@
 
     {% include analytics.html %}
   </body>
+  <script src="./../scripts/messageAnim.js"></script>
 </html>
