@@ -20,7 +20,7 @@ html {
 body {
 	background: $white;
   font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  
 }
 
 .container {
@@ -167,11 +167,17 @@ img {
 
 .wrapper-masthead {
   margin-bottom: 50px;
+  background-color: #222222;
+  color:#D7D5D6;   
+  min-height: 100px;
 }
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  background-color: #222222;
+  font-family: 'Comfortaa', cursive;
+   
+  min-height: 100px;
 
   @include mobile {
     text-align: center;
@@ -207,7 +213,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color:#D7D5D6;  
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
@@ -217,7 +223,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color:#D7D5D6;  
   font-size: 16px;
 
   @include mobile {
@@ -228,7 +234,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  
   font-size: 18px;
 
   @include mobile {
@@ -240,7 +246,7 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color:#D7D5D6;  
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
@@ -296,6 +302,52 @@ nav {
 footer {
   padding: 20px 0;
   text-align: center;
+  width: 100%;
+  background-color: #2A2829;
+  height: 170px; 
+  
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer h2{
+  color:#D7D5D6;
+  font-family: 'Comfortaa', cursive;
+}
+footer .buttons{
+  display: flex;
+  flex-direction: row;
+}
+footer .buttons a{
+  position: relative;
+  display: block;
+  
+  border-radius: 100%;
+  width:40px;
+  height: 40px;
+  margin:10px; 
+  overflow:hidden;
+}
+footer .buttons a .iconContact{
+  position: absolute;
+  top:0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 1s;
+
+  width:100%;
+  height: 200%;
+}
+footer .buttons a img{
+  position: relative;
+  width: 100%;
+  height: 90%; 
+}
+footer .buttons a:hover .iconContact{
+  top:-100%;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
