@@ -1,0 +1,57 @@
+/*-----------covers template-----------*/
+.comic{
+    position: absolute;
+    aspect-ratio: 525/700;
+    width:min(525px,100%);
+    /*width:525px;
+    height:700px;*/
+
+    border-radius: 11px;
+    background: linear-gradient(145deg, #373737, #2e2e2e);
+    box-shadow:  6px 6px 31px #141414,
+             -6px -6px 31px rgba(0, 0, 0, .3);
+    transform-origin: 0% 0%;
+    transition: 1s;
+ }
+ .texture{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    mix-blend-mode: luminosity;
+    opacity: .3;
+}
+nav{
+    position: absolute;
+    display: block;
+    top:12px;
+    right: 20px;
+    width: 77%;
+    display:flex;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    animation-name: line;
+    animation-delay: 0s;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;   
+}
+
+@keyframes line {
+    0%{text-decoration-color:transparent;}
+    30%{text-decoration-color:transparent;}
+    50%{text-decoration-color: initial;
+        color:#2589BD;}
+    70%{text-decoration-color:transparent;}
+    100%{text-decoration-color:transparent;}   
+}
+nav a:hover{
+    display:block;
+    background-color: #D7D5D6;
+    color:#222222 !important;
+    mix-blend-mode: difference !important;
+}

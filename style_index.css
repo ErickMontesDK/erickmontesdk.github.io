@@ -1,0 +1,48 @@
+@import url(./cssIndex/comicStructure.css);
+@import url(./cssIndex/covers.css);
+@import url(./cssIndex/fonts_colors.css);
+@import url(./cssIndex/layout.css);
+@import url(./cssIndex/sheets.css);
+a{
+    text-decoration: none;
+}
+footer .buttons{
+    display: flex;
+    flex-direction: row;
+}
+footer .buttons a{
+    position: relative;
+    display: block;
+    
+    border-radius: 100%;
+    width:40px;
+    height: 40px;
+    margin:10px; 
+    overflow:hidden;
+}
+footer .buttons a .iconContact{
+    position: absolute;
+    top:0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 1s;
+
+    width:100%;
+    height: 200%;
+}
+footer .buttons a img{
+    position: relative;
+    width: 100%;
+    height: 90%; 
+}
+footer .buttons a:hover .iconContact{
+    top:-100%;
+}
+
+@media screen and (max-width:1200px){
+    
+    .comicSection{
+        overflow:initial; 
+    }
+}

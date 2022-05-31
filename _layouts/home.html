@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style_index.css" />
+    <link rel="shortcut icon" type="image/png" href="{{site.url}}/favicon.png">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Akshar&family=Alfa+Slab+One&family=Comfortaa:wght@300&family=Klee+One&family=Nothing+You+Could+Do&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <header><h1>ERICK'S PORTFOLIO</h1></header>
+    
+    <div class="comicSection">
+        <section class="comic" id="home">
+            <div class="coverHome" >
+                <div class="redSize">
+                    
+                </div>
+                <div class="division">
+                    <img src="https://raw.githubusercontent.com/ErickMontesDK/Front-End-JS-Pokedex/main/Resources/Images/murcielago.png" 
+                    alt="bat" class="icoTitle">
+                    <span class="icoLabel">BLACK<br>LABEL</span>
+                    <img src="./1x/Recurso 1.png" alt="" class="Title">
+                </div>
+                <img src="./1x/grain-texture.png" alt="" class="texture">
+                <div class="fontTexture"></div>
+                <div class="fontTexture2"></div>
+                <span CLASS="textDeco">“Many of the truths that we cling to depend on our point of view.”<br>-NEW YORK TIMEZ</span>
+                <div class="codebarHome">
+                    <img src="./1x/codebar home.PNG">
+                    <span><b>Erick The Developer</b>/ Num 1./32 pags./Sept 1995</span>
+                </div>
+                <nav>
+                    <a href="{{ site.baseurl }}/blog">BLOG</a>
+                    <a href="#info" onclick="Portfolio()">PORTOFOLIO</a>
+                    <a href="#info" onclick="About()" >ABOUT ME</a>
+                    
+                </nav>
+                <img src="./1x/me.png" id="coverImg">
+        </section>
+
+        <section class="comic" id="about">
+            <div class="coverAbout" >
+                <div class="division">
+                    <div class="circle">MC</div>
+                    <div class="circle" id="prize">20c</div>
+                    <img src="./1x/Recurso 2.png" alt="" class="Title">
+                    <img src="./1x/comicscode.png" class="codeAuto">
+                    <span>NO.95<br><b>SEPT</b><br>30485</span>
+                </div>
+                <img src="./1x/aboutimage.png" id="AboutImg" >
+                <img src="./1x/grain-texture.png" alt="" class="texture">
+                <nav>
+                    <a href="{{ site.baseurl }}/blog">The Blog!</a>
+                    <a href="#info" onclick="Home()">The Home!</a>
+                    <a href="#info" onclick="Portfolio()">The Portfolio!</a>
+                    
+                </nav>
+                
+            </div>
+        </section>
+
+        <section class="comic" id="portfolio">
+
+            <div class="coverPortfolio" >
+                <img src="./1x/portfolio.png" id="PortfolioImg" >
+                <div class="letterTitle">
+                    <span>T</span>
+                    <span>H</span>
+                    <span>E</span>
+                    <span><br></span>
+                    <span>F</span>
+                    <span>I</span>
+                    <span>N</span>
+                    <span>A</span>
+                    <span>L</span>
+                </div>
+                <div class="letterTitle">
+                    <span>P</span>
+                    <span>O</span>
+                    <span>R</span>
+                    <span>T</span>
+                    <span>F</span>
+                    <span>O</span>
+                    <span>L</span>
+                    <span>I</span>
+                    <span>O</span>
+                </div>
+                <img src="./1x/grain-texture.png" alt="" class="texture">
+                <nav>
+                    <a href="{{ site.baseurl }}/blog">BLOG</a>
+                    <a href="#info" onclick="Home()">HOME</a>
+                    <a href="#info" onclick="About()">ABOUT ME</a>
+                    <span>4 of 7</span>
+                </nav>
+                <div class="circlePort">MC</div>
+                <div class="codebar">
+                    <img src="./1x/codebar.PNG" alt="codebar">
+                    <span><b>$3.99</b> US/MEX <b>SEP'95</b> MCCOMICS.COM</span>
+                </div>
+
+
+            </div>
+            
+        </section>
+
+    </div>
+    <div class="info" id="info">
+        <section class="sheet" id="homeSheet">
+            <img src="./1x/papertexture.png" class="texturepaper">
+            <div class="block">s</div>
+            <div class="textBox">
+                <h2>Hello there, I'm Erick Montes</h2>
+                <p>I'm a mechanical engineer and web developer<br>
+                A passionate person for technology</p>
+            </div>
+            <div class="block">s</div>
+        </section>
+
+        <section class="sheet" id="aboutSheet">
+            <img src="./1x/papertexture.png" class="texturepaper">
+            <div class="block">
+                <h2>Education</h2>
+                <p>I studied mechanical engineer at the <a href="">Instituto Tecnológico de Morelia</a>.
+                Then I entered into the programming world.</p>
+            </div>
+            <div class="block">
+                <h2>Skills</h2>
+                <p>My programming skills developed are 
+                    <dl>
+                        <dt>HTML</dt>
+                        <dt>CSS</dt>
+                        <dd>Know to </dd>
+                        <dt>JavaScript</dt>
+                        <dd>Worked with NodeJS and VueJS</dd>
+                        <dd>Git & Github</dd>
+                    </dl>
+                </p>
+            </div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </section> 
+        
+        <section class="sheet" id="portfolioSheet">
+            <img src="./1x/papertexture.png" class="texturepaper">
+            <div class="block">
+                <img src="./1x/portfolio/vacunación.PNG" id="vacunación">
+                <p class="boxtext">Pagina de vacunación
+                    <span class="hiddenText">
+                        Recreacíon de una pagina de registro para vacunación de COVID 19<br>
+                        <a href="https://erickmontesdk.github.io/Front-End-CSS-Vacunaci-n/" target="_blank" class="deployment">Deployment</a><br>
+                        <a href="https://github.com/ErickMontesDK/Front-End-CSS-Vacunaci-n" target="_blank" class="repo">Repositorio</a>
+                    </span>
+                </p>
+            </div>
+            
+            <div class="block">
+                <img src="./1x/portfolio/telegram.jpg" class="boxImg">
+                <p class="boxtext">Telegram bot!
+                    <span class="hiddenText">Consulta a un archivo JSON mediante un chat-bot de Telegram<br>
+                        <a href="https://github.com/ErickMontesDK/Fizzbuzz-Telegram-Bot" target="_blank" class="repo">Repositorio</a>
+                    </span>
+                    
+                </p>
+            </div>
+            <div class="block">
+                <img src="./1x/portfolio/pokedexmovil.jpeg" id="pokedex">
+                <p class="boxtext">Pokedex Webpage
+                    <span class="hiddenText">Página de consulta de información a una API
+                        sobre Pokemón<br>
+                        <a href="https://erickmontesdk.github.io/Front-End-JS-Pokedex/" target="_blank" class="deployment">Deployment</a><br>
+                        <a href="https://github.com/ErickMontesDK/Front-End-JS-Pokedex" target="_blank" class="repo">Repositorio</a>
+                    </span>
+                </p>
+            </div>
+            <div class="block">
+                <img src="./1x/portfolio/visual.PNG" class="boxImg">
+                <p class="boxtext">Visual Thinking API!
+                    <span class="hiddenText">Consulta de una lista de datos en archivo JSON mediante una API<br>
+                        <a href="https://github.com/ErickMontesDK/VIsual-Thinking-Api" target="_blank" class="repo">Repositorio</a>
+                    </span>
+                </p>
+            </div>
+            <div class="block">
+                <img src="./1x/portfolio/visual.PNG" class="boxImg">
+                <p class="boxtext">API: Express + DB!
+                    <span class="hiddenText">Creación de base de Datos SQL y consulta como API<br>
+                        <a href="https://github.com/ErickMontesDK/API-Express-DB" target="_blank" class="repo">Repositorio</a>
+                    </span>
+                </p>
+            </div>
+            <div class="block">
+                <img src="./1x/portfolio/pistrello.PNG" id="pistrello">
+                <p class="boxtext">Pistrello Pasteleria
+                    <span class="hiddenText">Página de pastelería ficticia creada con VUE, recibe y muestra
+                        los pedidos ingresados por el cliente<br>
+                        <a href="https://black-sand-012e9ca10.1.azurestaticapps.net/#/" target="_blank" class="deployment">Deployment</a><br>
+                        <a href="https://github.com/ErickMontesDK/FrontEnd-Vue-Vuex-Pasteleria" target="_blank" class="repo">Repositorio</a>
+                    </span>
+                </p>
+            </div>
+        
+        </section> 
+        
+    </div>
+    
+
+    
+    
+</body>
+<footer id="footer">
+    <div class="text">
+        <h2>Contacto:</h2>
+        <div class="buttons">
+            <a href="https://twitter.com/ErickDKnight">
+                <div class="iconContact">
+                    <img src="./1x/icons/twiiter.png">
+                    <img src="./1x/icons/twitter b.png">
+                </div>
+            </a>
+            <a href="https://github.com/ErickMontesDK">
+                <div class="iconContact">
+                    <img src="./1x/icons/GitHub.png">
+                    <img src="./1x/icons/GitHub b.png">
+                </div> 
+            </a>
+                  
+            <a href="#footer" onclick="copyEmail()">
+                <div class="iconContact">
+                    <img src="./1x/icons/email-icon.png">
+                    <img src="./1x/icons/email-icon b.png">
+                </div> 
+            </a>
+
+            <a href="https://www.linkedin.com/in/montesbederick/">
+                <div class="iconContact">
+                    <img src="./1x/icons/linkedin.png">
+                    <img src="./1x/icons/linkedin b.png">
+                </div> 
+            </a>
+
+        </div>
+    </div>
+
+</footer>
+
+<script src="./main.js"></script>
+</html>
