@@ -10,4 +10,7 @@ Hablando en serio, el proposito de este blog es dar a conocer como yo entiendo c
 Y aunque muchos hacen eso, yo quiero darlo a conocer desde la vista de novato, simple y conciso. Un novato que busca cierta información no deberia de perder tantas horas solo para entender un ejemplo<br>
 Espero serle de ayuda en este camino, e irnos guiando de la manita uno al otro <del>No homo, no que tenga algo de malo pero igual no homo</del>
 Y recuerden:<br> 
-<img src="./2022-6-01-Hello-World/los_queremos.png">
+
+![_config.yml]({{ site.baseurl }}/images/2022-6-01-Hello-World/losQueremos.png)
+
+
