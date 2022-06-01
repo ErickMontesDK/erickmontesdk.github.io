@@ -11,7 +11,6 @@ Y aunque muchos hacen eso, yo quiero darlo a conocer desde la vista de novato, s
 Espero serle de ayuda en este camino, e irnos guiando de la manita uno al otro <del>No homo, no que tenga algo de malo pero igual no homo</del>
 Y recuerden:<br> 
 
-![_config.yml]({{ site.baseurl }}/images/2022-6-01-Hello-World/losqueremos.png)
-
-![_config.yml]({{ site.baseurl }}/images/first-post.png)
-
+<div style="width:100%; display:flex; justify-content:center;">
+    <img src="{{ site.baseurl }}/postImages/2022-6-01-Hello-World/losqueremos.png" style="width:250px;">
+</div>
