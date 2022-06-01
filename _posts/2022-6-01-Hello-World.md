@@ -9,4 +9,5 @@ Pues...<b>¡YA NO ESPERE MÁS!</b>. Si marca en este momento al 4433 512 512, un
 Hablando en serio, el proposito de este blog es dar a conocer como yo entiendo ciertas partes de la programación. Hablando de dependencias, caracteristicas de un lenguaje, base de datos, etc etc.
 Y aunque muchos hacen eso, yo quiero darlo a conocer desde la vista de novato, simple y conciso. Un novato que busca cierta información no deberia de perder tantas horas solo para entender un ejemplo<br>
 Espero serle de ayuda en este camino, e irnos guiando de la manita uno al otro <del>No homo, no que tenga algo de malo pero igual no homo</del>
-Y recuerden:<br> <img src="./2022-06-01-Hello-World/los%20queremos.png">
+Y recuerden:<br> 
+<img src="./2022-6-01-Hello-World/los_queremos.png">
