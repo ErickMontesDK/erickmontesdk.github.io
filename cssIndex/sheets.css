@@ -87,9 +87,12 @@
 #aboutSheet .block{
     height:47.5%;
 }
+#aboutSheet li{
+    margin-left:-15px;
+}
 #aboutSheet .block:nth-child(-n+3){width: 47.5%;}
-#aboutSheet .block:nth-child(4){width: 60%;}
-#aboutSheet .block:nth-child(5){width: 35%;}
+#aboutSheet .block:nth-child(4){width: 50%;}
+#aboutSheet .block:nth-child(5){width: 45%;}
 
 /*------Portfolio sheets---------*/
 #portfolioSheet{
