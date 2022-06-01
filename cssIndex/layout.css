@@ -28,7 +28,11 @@ header{
     justify-content: center;
     align-items: center;
 
-    font-family: 'Comfortaa', cursive;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    font-weight: 300;
+    font-size: 28px;
+    letter-spacing: 1px;
     color:#D7D5D6;
 }
 
